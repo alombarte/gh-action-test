@@ -7,6 +7,12 @@ on:
   discussion:
     types: [labeled, unlabeled]
 
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+  discussions: write
+
 jobs:
   labels:
     uses: krakend/.github/.github/workflows/label-actions.yml@main
