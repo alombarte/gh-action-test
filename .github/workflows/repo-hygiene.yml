@@ -1,0 +1,11 @@
+on:
+  schedule:
+    - cron: '0 10 * * *'
+name: Issue and PR hygiene
+jobs:
+  stale:
+    uses: krakendio/.github/.github/workflows/stale.yml@main
+  lock-threads:
+    uses: krakendio/.github/.github/workflows/lock-threads.yml@main
+  labels:
+    uses: krakendio/.github/.github/workflows/label-actions.yml@main
