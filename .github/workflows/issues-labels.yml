@@ -1,0 +1,14 @@
+name: 'Label Actions'
+on:
+  issues:
+    types: [labeled, unlabeled]
+  pull_request_target:
+    types: [labeled, unlabeled]
+  discussion:
+    types: [labeled, unlabeled]
+
+jobs:
+  labels:
+    uses: krakend/.github/.github/workflows/label-actions.yml@main
+    with:
+      config-path: krakend/.github/.github/label-actions.yml
