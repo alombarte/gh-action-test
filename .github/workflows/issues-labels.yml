@@ -16,3 +16,5 @@ permissions:
 jobs:
   labels:
     uses: krakend/.github/.github/workflows/label-actions.yml@main
+    with:
+      config-path: krakend/.github/.github/label-actions.yml@main
